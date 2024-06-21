@@ -11,7 +11,11 @@ public class UserService {
      private UserRepo userRepo;
 
      public List<User> getAll(){
-         return userRepo.findAll();
+         if (userRepo.findAll().isEmpty()) {
+               throw new UserNotFoundException();
+          }else{
+               return userRepo.findAll();
+         }
      }
 
      public User get(int id){
