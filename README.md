@@ -1,4 +1,4 @@
-User Management
+#User Management
 The User Management API allows you to work with users' data. You can retrieve all users, get one user based on id, add new ones to the database, update the information of already existing one and delete them. This project is made in IntelliJ IDEA and uses MySQL Workbench 8.0 CE. The tools and their versions used are all listed in the pom.xml file. 
 
 To start the project first you need to create a database with the name User_Management then in the application.properties file you should write the username and password which are correct for your database. 
